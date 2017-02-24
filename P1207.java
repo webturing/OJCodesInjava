@@ -1,7 +1,7 @@
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Main {
+public class P1207 {
 	static Scanner cin = new Scanner(System.in);
 	static PrintWriter cout = new PrintWriter(System.out);
 	static {
@@ -9,11 +9,16 @@ public class Main {
 
 	public static void main(String[] args) {
 		while (cin.hasNext()) {
-			int a = cin.nextInt();
-			int b = cin.nextInt();
-			if (a == 0 && b == 0)
+			int n = cin.nextInt();
+			if (n == 0)
 				break;
-			cout.println(a + b);
+			int a = n % 1000 / 100;
+			int b = n % 100 / 10;
+			int c = n % 10;
+			if (n == a * a * a + b * b * b + c * c * c)
+				cout.println("Yes");
+			else
+				cout.println("No");
 		}
 		cin.close();
 		cout.close();
