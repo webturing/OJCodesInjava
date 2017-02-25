@@ -1,4 +1,3 @@
-package acm.ahstu.cc;
 
 import java.io.PrintWriter;
 import java.util.Scanner;

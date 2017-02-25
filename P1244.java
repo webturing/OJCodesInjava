@@ -1,7 +1,7 @@
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class P1242 {
+public class P1244 {
 	static Scanner cin = new Scanner(System.in);
 	static PrintWriter cout = new PrintWriter(System.out);
 	static {
@@ -9,11 +9,11 @@ public class P1242 {
 
 	public static void main(String[] args) {
 		while (cin.hasNext()) {
-			int a = cin.nextInt();
-			int b = cin.nextInt();
-			if (a == 0 && b == 0)
-				break;
-			cout.println(a + b);
+			int tot = 0;
+			for (int m = cin.nextInt(); m-- > 0;) {
+				tot += cin.nextInt();
+			}
+			cout.println(tot);
 		}
 		cin.close();
 		cout.close();

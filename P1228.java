@@ -1,20 +1,19 @@
 import java.io.PrintWriter;
+import java.math.BigInteger;
 import java.util.Scanner;
 
-public class P1242 {
+public class P1228 {
 	static Scanner cin = new Scanner(System.in);
 	static PrintWriter cout = new PrintWriter(System.out);
 	static {
 	}
 
 	public static void main(String[] args) {
-		while (cin.hasNext()) {
-			int a = cin.nextInt();
-			int b = cin.nextInt();
-			if (a == 0 && b == 0)
-				break;
-			cout.println(a + b);
-		}
+		int n = cin.nextInt();
+		BigInteger s = BigInteger.ONE;
+		for (int i = 2; i <= n; i++)
+			s = s.multiply(new BigInteger(Integer.toString(i)));
+		cout.println(s);
 		cin.close();
 		cout.close();
 	}

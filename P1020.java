@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
-public class Main {
+public class P1020 {
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
         int[] a=new int[10];

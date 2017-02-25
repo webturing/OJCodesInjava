@@ -1,20 +1,15 @@
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class P1242 {
+public class P1273 {
 	static Scanner cin = new Scanner(System.in);
 	static PrintWriter cout = new PrintWriter(System.out);
 	static {
 	}
 
 	public static void main(String[] args) {
-		while (cin.hasNext()) {
-			int a = cin.nextInt();
-			int b = cin.nextInt();
-			if (a == 0 && b == 0)
-				break;
-			cout.println(a + b);
-		}
+		int a = cin.nextInt(), b = cin.nextInt();
+		cout.println(String.format("%d %d", b, a));
 		cin.close();
 		cout.close();
 	}

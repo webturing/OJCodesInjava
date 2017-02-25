@@ -1,20 +1,17 @@
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class P1242 {
+public class P1271 {
 	static Scanner cin = new Scanner(System.in);
 	static PrintWriter cout = new PrintWriter(System.out);
 	static {
 	}
 
 	public static void main(String[] args) {
-		while (cin.hasNext()) {
-			int a = cin.nextInt();
-			int b = cin.nextInt();
-			if (a == 0 && b == 0)
-				break;
-			cout.println(a + b);
-		}
+		double r = cin.nextDouble();
+		double h = cin.nextDouble();
+		double area = Math.PI * r * r * 2 + h * Math.PI * r * 2;
+		cout.println(String.format("Area=%.3f", area));
 		cin.close();
 		cout.close();
 	}

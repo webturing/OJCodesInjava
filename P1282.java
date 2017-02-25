@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-
-public class P1201 {
+public class P1282 {
 	public static void main(String[] args) {
 		Scanner cin = new Scanner(System.in);
-		System.out.println("Happy new year \"2014\"");
+		System.out.println(String.format("%.2f", Math.abs(cin.nextFloat())));
 		cin.close();
 	}
 }

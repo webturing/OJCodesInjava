@@ -1,19 +1,16 @@
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class P1242 {
+public class P1571 {
 	static Scanner cin = new Scanner(System.in);
 	static PrintWriter cout = new PrintWriter(System.out);
 	static {
 	}
 
 	public static void main(String[] args) {
-		while (cin.hasNext()) {
-			int a = cin.nextInt();
-			int b = cin.nextInt();
-			if (a == 0 && b == 0)
-				break;
-			cout.println(a + b);
+		for (int n = cin.nextInt(); n-- > 0;) {
+			int m = cin.nextInt();
+			cout.println(m * (m + 1) * (m + 2) / 6);
 		}
 		cin.close();
 		cout.close();

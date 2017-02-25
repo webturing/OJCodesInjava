@@ -1,20 +1,19 @@
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class P1242 {
+public class P1284 {
 	static Scanner cin = new Scanner(System.in);
 	static PrintWriter cout = new PrintWriter(System.out);
 	static {
 	}
 
 	public static void main(String[] args) {
-		while (cin.hasNext()) {
-			int a = cin.nextInt();
-			int b = cin.nextInt();
-			if (a == 0 && b == 0)
-				break;
-			cout.println(a + b);
-		}
+		int y = cin.nextInt();
+
+		if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0)
+			cout.println("yes");
+		else
+			cout.println("no");
 		cin.close();
 		cout.close();
 	}
