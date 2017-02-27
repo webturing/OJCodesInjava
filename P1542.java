@@ -1,7 +1,7 @@
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Main {
+public class P1542 {
     static Scanner cin = new Scanner(System.in);
     static PrintWriter cout = new PrintWriter(System.out);
 
@@ -16,6 +16,7 @@ public class Main {
             double tot = 200, cur = n;
             boolean find = false;
             for (int i = 0; i < 20; i++) {
+
                 if (cur >= tot) {
                     find = true;
                     cout.println(i + 1);
