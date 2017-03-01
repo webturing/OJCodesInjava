@@ -30,6 +30,4 @@ public class P1005 {
         cout.close();
         cin.close();
     }
-
-
 }
