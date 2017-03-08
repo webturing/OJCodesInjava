@@ -1,7 +1,7 @@
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Main {
+public class P1071 {
     static Scanner cin = new Scanner(System.in);
     static PrintWriter cout = new PrintWriter(System.out);
 
