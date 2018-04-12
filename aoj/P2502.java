@@ -1,7 +1,8 @@
+package aoj;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
-import java.util.Arrays;
 import java.util.Scanner;
 
 import static java.util.Arrays.deepToString;
@@ -10,6 +11,22 @@ public class Main {
     static boolean LOCAL = System.getSecurityManager() == null;
     static boolean TO_FILE = true;
     Scanner cin = new Scanner(System.in);
+
+    void run() {
+        int T = Integer.parseInt(cin.nextLine());
+        while (T-- > 0) {
+            String[] words = cin.nextLine().toUpperCase().split("\\s+");
+            StringBuilder builder = new StringBuilder();
+            for (String word : words)
+                builder.append(word.charAt(0));
+            System.out.println(builder);
+
+        }
+    }
+
+    void debug(Object... os) {
+        System.err.println(deepToString(os));
+    }
 
     public static void main(String[] args) {
         if (LOCAL) {
@@ -27,21 +44,5 @@ public class Main {
             }
         }
         new Main().run();
-    }
-
-    void run() {
-        int[] A = new int[cin.nextInt()];
-        for (int i = 0; i < A.length; i++) {
-            A[i] = cin.nextInt();
-        }
-        Arrays.sort(A);
-        for (int i = A.length - 1; i >= 0; i--)
-            System.out.print(A[i] + " ");
-        System.out.println();
-        //debug(A);
-    }
-
-    void debug(Object... os) {
-        System.err.println(deepToString(os));
     }
 }
