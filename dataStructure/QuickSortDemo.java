@@ -1,3 +1,5 @@
+package dataStructure;
+
 import java.util.Arrays;
 
 public class QuickSortDemo {

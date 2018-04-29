@@ -1,9 +1,14 @@
-import static java.util.Arrays.*;
+package aoj;
 
-import java.io.*;
-import java.util.*;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+import java.util.Arrays;
+import java.util.Scanner;
 
-public class Main {
+import static java.util.Arrays.deepToString;
+
+public class P2469 {
     static boolean LOCAL = System.getSecurityManager() == null;
     static boolean TO_FILE = true;
     Scanner cin = new Scanner(System.in);
@@ -39,6 +44,6 @@ public class Main {
                 TO_FILE = false;
             }
         }
-        new Main().run();
+        new P2469().run();
     }
 }

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 import static java.util.Arrays.deepToString;
 
-public class Main {
+public class P2502 {
     static boolean LOCAL = System.getSecurityManager() == null;
     static boolean TO_FILE = true;
     Scanner cin = new Scanner(System.in);
@@ -43,6 +43,6 @@ public class Main {
                 TO_FILE = false;
             }
         }
-        new Main().run();
+        new P2502().run();
     }
 }

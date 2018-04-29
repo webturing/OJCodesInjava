@@ -1,6 +1,8 @@
+package aoj;
+
 import java.util.Scanner;
 
-public class PCheckStringType {
+public class P2551CheckStringType {
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
         System.out.println(checkType(cin.next(), cin.next()));

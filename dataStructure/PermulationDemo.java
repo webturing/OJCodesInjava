@@ -1,10 +1,11 @@
+package dataStructure;
+
 import java.util.Arrays;
 
 public class PermulationDemo {
 
-    static int a[] = new int[]{1, 2, 3,};
+    static int a[] = new int[]{4, 3, 2, 1};
     static int n = a.length;
-    static boolean visited[] = new boolean[n];
 
     public static void main(String[] args) {
         dfs(0);
