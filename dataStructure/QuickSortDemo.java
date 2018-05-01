@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class QuickSortDemo {
     public static void main(String[] args) {
-        int[] arr = randInts(10);
+        int[] arr = randInts(100);
         new QuickSortDemo().quickSort(arr);
         System.out.println(Arrays.toString(arr));
     }

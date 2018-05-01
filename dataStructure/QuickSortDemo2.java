@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class QuickSortDemo2 {
     public static void main(String[] args) {
-        int[] arr = randInts(10);
+        int[] arr = randInts(20);
         new QuickSortDemo2().quickSort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -28,18 +28,29 @@ public class QuickSortDemo2 {
         quickSort(arr, p + 1, e);
     }
 
-    private int partition(int[] arr, int s, int e) {
-        int key = arr[s];
-        int i = s + 1, j = e;
-        while (i < j) {
-            while (i < j && arr[i] < key) i++;
-            while (j > i && arr[j] > key) j--;
-            if (i == j)
-                break;
-            swap(arr, i, j);
+    int partition(int[] arr, int low, int high) {
+
+        int l = low;
+        int h = high;
+        int povit = arr[low];
+
+        while (l < h) {
+            while (l < h && arr[h] >= povit)
+                h--;
+            if (l < h) {
+                swap(arr, l, h);
+                l++;
+            }
+
+            while (l < h && arr[l] <= povit)
+                l++;
+
+            if (l < h) {
+                swap(arr, l, h);
+                h--;
+            }
         }
-        swap(arr, s, i - 1);
-        return i;
+        return l;
     }
 
     private void swap(int[] arr, int i, int j) {
