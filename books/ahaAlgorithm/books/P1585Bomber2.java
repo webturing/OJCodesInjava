@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class P1584Bomber2 {
+public class P1585Bomber2 {
 
     static int count = 0;
 
