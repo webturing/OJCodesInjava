@@ -23,24 +23,16 @@ public class NYIST1233BigIntegerSubStract {
                 public int compare(String o1, String o2) {
                     String s1 = o1 + o2;
                     String s2 = o2 + o1;
-                    return new BigInteger(s2).compareTo(new BigInteger(s1));
+                    return s2.compareTo(s1);
                 }
             });
-            String max = "";
-            for (String number : numbers)
-                max += number;
-            Arrays.sort(numbers, new Comparator<String>() {
-                @Override
-                public int compare(String o1, String o2) {
-                    String s1 = o1 + o2;
-                    String s2 = o2 + o1;
-                    return new BigInteger(s1).compareTo(new BigInteger(s2));
-                }
-            });
-            String min = "";
-            for (String number : numbers)
-                min += number;
-            System.out.println(new BigInteger(max).subtract(new BigInteger(min)));
+            StringBuffer max = new StringBuffer();
+            StringBuffer min = new StringBuffer();
+            for (int i = 0; i < numbers.length; i++) {
+                max.append(numbers[i]);
+                min.append(numbers[numbers.length - 1 - i]);
+            }
+            System.out.print(new BigInteger(max.toString()).subtract(new BigInteger(min.toString())) + "\n");
         }
         in.close();
     }
