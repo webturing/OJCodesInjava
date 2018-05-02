@@ -1,4 +1,4 @@
-package dataStructure;
+package books.ahaAlgorithm.books;
 
 public class SubSetsDemo {
     static int n = 3;

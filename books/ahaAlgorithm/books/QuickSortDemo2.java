@@ -1,4 +1,4 @@
-package dataStructure;
+package books.ahaAlgorithm.books;
 
 import java.util.Arrays;
 
