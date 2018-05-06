@@ -3,7 +3,7 @@ package nyist.part7highPrecision;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class NYIST045BoardCover {
+public class NYIST0045BoardCover {
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
         int m = cin.nextInt();

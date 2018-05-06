@@ -3,7 +3,7 @@ package nyist.part7highPrecision;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class NYIST073BigIntegerComparison {
+public class NYIST0073BigIntegerComparison {
     public static void main(String[] args) {
         for (Scanner cin = new Scanner(System.in); cin.hasNext(); ) {
             BigInteger a = cin.nextBigInteger();
