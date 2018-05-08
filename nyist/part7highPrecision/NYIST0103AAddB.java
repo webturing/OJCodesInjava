@@ -12,7 +12,6 @@ public class NYIST0103AAddB {
             BigInteger a = cin.nextBigInteger();
             BigInteger b = cin.nextBigInteger();
             System.out.print(String.format("Case %d:\n%s + %s = %s\n", i, a, b, a.add(b)));
-
         }
         cin.close();
     }

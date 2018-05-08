@@ -1,11 +1,5 @@
 package nyist.part7highPrecision;
 
-
-/*
- * http://acm.nyist.edu.cn/JudgeOnline/problem.php?pid=513
- * by jtahstu on 2015/3/31 19:00
- */
-
 import java.math.BigDecimal;
 import java.util.Scanner;
 
