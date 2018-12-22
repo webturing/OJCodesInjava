@@ -1,4 +1,4 @@
-package books.ahaAlgorithm.books;
+package books.ahaAlgorithm.books.excise;
 
 import java.util.LinkedList;
 import java.util.Queue;
