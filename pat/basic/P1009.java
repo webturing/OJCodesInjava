@@ -4,8 +4,7 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class P1009 {
-    static Scanner cin = new Scanner(System.in);
-    static PrintWriter cout = new PrintWriter(System.out);
+
 
     public static void main(String[] args) {
         String[] words = cin.nextLine().split("\\s+");
@@ -17,4 +16,7 @@ public class P1009 {
         cin.close();
         cout.close();
     }
+
+    static Scanner cin = new Scanner(System.in);
+    static PrintWriter cout = new PrintWriter(System.out);
 }
